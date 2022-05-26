@@ -7,7 +7,7 @@ button {
 /* APP CONTAINER COMPONENT (BEM BLOCK) */
 .app-container {
   width: 500px;
-  margin: 0 auto;
+  margin: 8px auto;
   color: #333;
   background-color: #f8f8f8;
   font-family: Lato, sans-serif;
@@ -84,7 +84,7 @@ button {
   display: none;
   margin: 0;
   line-height: 18px;
-  height: 21px;
+  height: 19px;
   padding: 0 9px;
   border: 1px solid #ddd;
   background: #fff;
@@ -103,6 +103,7 @@ button {
 
 .task--new {
   border: none;
+  padding-bottom: 16px;
 }
 
 .task--new .task__input,
@@ -136,6 +137,8 @@ button {
 
 /* ICON-DELETE COMPONENT (BEM BLOCK) */
 .icon-delete {
+  display: block;
+  margin: auto;
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
