@@ -37,8 +37,6 @@ button {
 
 /* MAIN COMPONENT (BEM BLOCK) */
 .main {
-  display: block;
-  width: 500px;
   margin: 1rem auto 0;
 }
 
@@ -56,46 +54,43 @@ button {
 /* TASKS LIST COMPONENT (BEM BLOCK) */
 .tasks-list {
   margin: 0;
-  padding: 0px;
+  padding: 0;
+  list-style: none;
 }
 
 /* TASK COMPONENT (BEM BLOCK) */
 .task {
-  list-style: none;
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
 }
 
 .task__label,
 .task__input {
-  width: 56%;
-  display: inline-block;
+  font-size: 18px;
   flex-grow: 1;
 }
 
 .task__label {
+  overflow: hidden;
   padding-left: 10px;
   box-sizing: border-box;
-  font-size: 18px;
   width: 226px;
 }
 
 .task__input {
   display: none;
   margin: 0;
-  font-size: 18px;
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
   border: 1px solid #ddd;
   background: #fff;
   border-radius: 6px;
-  font-family: Lato, sans-serif;
   color: #888;
+  font-family: Lato, sans-serif;
 }
 
 .task__input:focus {
@@ -112,8 +107,7 @@ button {
 
 .task--new .task__input,
 .task--edit .task__input {
-  display: inline-block;
-  width: 224px;
+  display: unset;
 }
 
 .task--edit .task__label {
