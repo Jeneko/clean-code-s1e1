@@ -45,6 +45,7 @@ var createNewTaskElement = function (taskString) {
     editInput.type = "text";
 
     deleteButtonImg.src = './remove.svg';
+    deleteButtonImg.alt = 'Remove';
     deleteButton.appendChild(deleteButtonImg);
 
     //and appending.
